@@ -34,7 +34,7 @@ function check_button_link(link) {
     }
 }
 
-function toggle_view_link(link) {
+function toggle_view_link(link, sublink=null) {
     switch (link) {
         case "link_home":
             $("#includeContent_start").load("app/start.html");
@@ -42,14 +42,25 @@ function toggle_view_link(link) {
         case "link_table":
             $("#includeContent_start").load("app/link_menu/table.html");
             break;
-        case "link_product":
-            $("#includeContent_start").load("app/link_menu/product/add_products.html");
+        case "link_add":
+            switch (sublink) {
+                case "product":
+                    $("#includeContent_start").load("app/link_menu/add/add_products.html");
+                    break;
+                case "user":
+                    $("#includeContent_start").load("app/link_menu/add/add_users.html");
+                    break;
+            }
             break;
         case "link_about":
             $("#includeContent_start").load("app/link_menu/about.html");
             break;
     }
-    window.history.replaceState("","","?link="+link);
+    if (sublink == null) {
+        window.history.replaceState("","","?link="+link);
+    } else {
+        window.history.replaceState("","","?link="+link+"?sublink="+sublink);
+    }
 }
 
 

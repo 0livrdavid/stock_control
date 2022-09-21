@@ -34,13 +34,19 @@ $( "#link_about" ).click(function() {
 });
 
 $( ".link_add_product" ).click(function() {
-    param = "link_product";
-    if (!($("#link_product").hasClass("button_link_clicked"))) {
+    param = "link_add";
+    if (!($("#link_add").hasClass("button_link_clicked"))) {
         check_button_link(param);
-        toggle_view_link(param);
+        toggle_view_link(param,"product");
     }
 });
 
-
+$( ".link_add_user" ).click(function() {
+    param = "link_add";
+    if (!($("#link_add").hasClass("button_link_clicked"))) {
+        check_button_link(param);
+        toggle_view_link(param,"user");
+    }
+});
 
 
