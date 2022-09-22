@@ -10,31 +10,31 @@ function check_button_link(link) {
         case "link_home":
             $("#link_home").addClass("button_link_clicked");
             $("#link_table").removeClass("button_link_clicked");
-            $("#link_product").removeClass("button_link_clicked");
+            $("#link_add").removeClass("button_link_clicked");
             $("#link_about").removeClass("button_link_clicked");
             break;
         case "link_table":
             $("#link_home").removeClass("button_link_clicked");
             $("#link_table").addClass("button_link_clicked");
-            $("#link_product").removeClass("button_link_clicked");
+            $("#link_add").removeClass("button_link_clicked");
             $("#link_about").removeClass("button_link_clicked");
             break;
-        case "link_product":
+        case "link_add":
             $("#link_home").removeClass("button_link_clicked");
             $("#link_table").removeClass("button_link_clicked");
-            $("#link_product").addClass("button_link_clicked");
+            $("#link_add").addClass("button_link_clicked");
             $("#link_about").removeClass("button_link_clicked");
             break;
         case "link_about":
             $("#link_home").removeClass("button_link_clicked");
             $("#link_table").removeClass("button_link_clicked");
-            $("#link_product").removeClass("button_link_clicked");
+            $("#link_add").removeClass("button_link_clicked");
             $("#link_about").addClass("button_link_clicked");
             break;
     }
 }
 
-function toggle_view_link(link, sublink=null) {
+function toggle_view_link(link,sublink) {
     switch (link) {
         case "link_home":
             $("#includeContent_start").load("app/start.html");
@@ -59,7 +59,7 @@ function toggle_view_link(link, sublink=null) {
     if (sublink == null) {
         window.history.replaceState("","","?link="+link);
     } else {
-        window.history.replaceState("","","?link="+link+"?sublink="+sublink);
+        window.history.replaceState("","","?link="+link+"&sublink="+sublink);
     }
 }
 
