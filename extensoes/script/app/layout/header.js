@@ -2,7 +2,7 @@ var urlParams = new URLSearchParams(window.location.search);
 var link = urlParams.get('link');
 var sublink = urlParams.get('sublink');
 
-if (link == undefined || link == null) {
+if (link == undefined || link == null || link == "link_table") {
     window.location.replace("?link=link_home");
     link = "link_home";
     sublink = null;
