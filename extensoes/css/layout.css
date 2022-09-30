@@ -1,0 +1,17 @@
+:root {
+    --bg-color: rgb(247 248 249);
+}  
+
+#includeContent_start {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#nav_header {
+    background-color: var(--bg-color);
+}
+
+#includeContent_header {
+
+}
+

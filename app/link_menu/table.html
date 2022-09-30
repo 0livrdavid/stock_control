@@ -1,126 +1,650 @@
 <div class="container">
-    <form>
-        <div class="row mt-2">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div class="form-group" style="text-align: center;">
-                    <label for="id">Id</label>
-                    <input  style="margin-top: 2%" type="number" min="0" class="form-control" id="id" placeholder="Find by Id...">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div class="form-group" style="text-align: center;">
-                    <label for="products">Products</label>
-                    <input  style="margin-top: 2%" type="products" class="form-control" id="products" placeholder="Find Products...">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div class="form-group" style="text-align: center;">
-                    <label for="formControlSelect">Category</label>
-                    <select style="margin-top: 2%" class="form-control" id="formControlSelect">
-                        <option>Fish</option>
-                        <option>Meal</option>
-                        <option>Fruit</option>
-                        <option>Vegetables</option>
-                        <option>Pasta</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a id="link_table_produtos" class="nav-link active" aria-current="page" href="#table_produtos" ]
+            data-bs-target="#table_produtos" role="tab" aria-controls="home" aria-selected="true">Produtos</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a id="link_table_pedidos" class="nav-link" href="#table_pedidos" data-bs-target="#table_produtos"
+            role="tab" aria-controls="home" aria-selected="true">Pedidos</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a id="link_table_deposito" class="nav-link" href="#table_deposito" data-bs-target="#table_produtos"
+            role="tab" aria-controls="home" aria-selected="true">Deposito</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a id="link_table_local" class="nav-link" href="#table_local" data-bs-target="#table_produtos"
+            role="tab" aria-controls="home" aria-selected="true">Local</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a id="link_table_pessoas" class="nav-link" href="#table_pessoas" data-bs-target="#table_pessoas"
+            role="tab" aria-controls="home" aria-selected="true">Pessoas</a>
+        </li>
+    </ul>
 
-<div class="container ">
-    <div class="row mt-4 overflow-auto">
-        <div class="col-12">
-            <table id="example" class="display table table-striped " style="width:100%">
-                <thead>
-                    <tr>
-                        <th id="options"></th>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Quantity</th>
-                        <th>Price(Unity)</th>
-                        <th>Provide</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <a class="btn btn-default bi bi-pencil-square" href="#editModal" role="button" data-bs-target="#editModal" data-bs-toggle="modal"></a>                                
-                            <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
-                        </td>
-                        <td>1</td>
-                        <td>Ham</td>
-                        <td>Meal</td>
-                        <td>61</td>
-                        <td>$ 10</td>
-                        <td>Friboi</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
-                            <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
-                        </td>
-                        <td>1</td>
-                        <td>Ham</td>
-                        <td>Meal</td>
-                        <td>61</td>
-                        <td>$ 10</td>
-                        <td>Friboi</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
-                            <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
-                        </td>
-                        <td>1</td>
-                        <td>Ham</td>
-                        <td>Meal</td>
-                        <td>61</td>
-                        <td>$ 10</td>
-                        <td>Friboi</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
-                            <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
-                        </td>
-                        <td>1</td>
-                        <td>Ham</td>
-                        <td>Meal</td>
-                        <td>61</td>
-                        <td>$ 10</td>
-                        <td>Friboi</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
-                            <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
-                        </td>
-                        <td>1</td>
-                        <td>Ham</td>
-                        <td>Meal</td>
-                        <td>61</td>
-                        <td>$ 10</td>
-                        <td>Friboi</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
-                            <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
-                        </td>
-                        <td>1</td>
-                        <td>Ham</td>
-                        <td>Meal</td>
-                        <td>61</td>
-                        <td>$ 10</td>
-                        <td>Friboi</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="tab-content" id="myTabContent">
+        <div id="table_produtos" class="tab-pane fade show active" role="tabpanel" aria-labelledby="link_table_produtos">
+            teste 1
+            <form>
+                <div class="row mt-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="id">Id</label>
+                            <input  style="margin-top: 2%" type="number" min="0" class="form-control" id="id" placeholder="Find by Id...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="products">Products</label>
+                            <input  style="margin-top: 2%" type="products" class="form-control" id="products" placeholder="Find Products...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="formControlSelect">Category</label>
+                            <select style="margin-top: 2%" class="form-control" id="formControlSelect">
+                                <option>Fish</option>
+                                <option>Meal</option>
+                                <option>Fruit</option>
+                                <option>Vegetables</option>
+                                <option>Pasta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        
+        
+            <div class="row mt-4 overflow-auto">
+                <div class="col-12">
+                    <table id="example" class="display table table-striped " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th id="options"></th>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Price(Unity)</th>
+                                <th>Provide</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="#editModal" role="button" data-bs-target="#editModal" data-bs-toggle="modal"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </div>
+        <div id="table_pedidos" class="tab-pane fade" role="tabpanel" aria-labelledby="link_table_pedidos">
+            teste 2
+            <form>
+                <div class="row mt-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="id">Id</label>
+                            <input  style="margin-top: 2%" type="number" min="0" class="form-control" id="id" placeholder="Find by Id...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="products">Products</label>
+                            <input  style="margin-top: 2%" type="products" class="form-control" id="products" placeholder="Find Products...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="formControlSelect">Category</label>
+                            <select style="margin-top: 2%" class="form-control" id="formControlSelect">
+                                <option>Fish</option>
+                                <option>Meal</option>
+                                <option>Fruit</option>
+                                <option>Vegetables</option>
+                                <option>Pasta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        
+        
+            <div class="row mt-4 overflow-auto">
+                <div class="col-12">
+                    <table id="example" class="display table table-striped " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th id="options"></th>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Price(Unity)</th>
+                                <th>Provide</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="#editModal" role="button" data-bs-target="#editModal" data-bs-toggle="modal"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </div>
+        <div id="table_deposito" class="tab-pane fade" role="tabpanel" aria-labelledby="link_table_local">
+            teste 3
+            <form>
+                <div class="row mt-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="id">Id</label>
+                            <input  style="margin-top: 2%" type="number" min="0" class="form-control" id="id" placeholder="Find by Id...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="products">Products</label>
+                            <input  style="margin-top: 2%" type="products" class="form-control" id="products" placeholder="Find Products...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="formControlSelect">Category</label>
+                            <select style="margin-top: 2%" class="form-control" id="formControlSelect">
+                                <option>Fish</option>
+                                <option>Meal</option>
+                                <option>Fruit</option>
+                                <option>Vegetables</option>
+                                <option>Pasta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        
+        
+            <div class="row mt-4 overflow-auto">
+                <div class="col-12">
+                    <table id="example" class="display table table-striped " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th id="options"></th>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Price(Unity)</th>
+                                <th>Provide</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="#editModal" role="button" data-bs-target="#editModal" data-bs-toggle="modal"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </div>
+        <div id="table_local" class="tab-pane fade" role="tabpanel" aria-labelledby="link_table_local">
+            teste 4
+            <form>
+                <div class="row mt-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="id">Id</label>
+                            <input  style="margin-top: 2%" type="number" min="0" class="form-control" id="id" placeholder="Find by Id...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="products">Products</label>
+                            <input  style="margin-top: 2%" type="products" class="form-control" id="products" placeholder="Find Products...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="formControlSelect">Category</label>
+                            <select style="margin-top: 2%" class="form-control" id="formControlSelect">
+                                <option>Fish</option>
+                                <option>Meal</option>
+                                <option>Fruit</option>
+                                <option>Vegetables</option>
+                                <option>Pasta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        
+        
+            <div class="row mt-4 overflow-auto">
+                <div class="col-12">
+                    <table id="example" class="display table table-striped " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th id="options"></th>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Price(Unity)</th>
+                                <th>Provide</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="#editModal" role="button" data-bs-target="#editModal" data-bs-toggle="modal"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </div>
+        <div id="table_pessoas" class="tab-pane fade" role="tabpanel" aria-labelledby="link_table_pessoas">
+            teste 5
+            <form>
+                <div class="row mt-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="id">Id</label>
+                            <input  style="margin-top: 2%" type="number" min="0" class="form-control" id="id" placeholder="Find by Id...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="products">Products</label>
+                            <input  style="margin-top: 2%" type="products" class="form-control" id="products" placeholder="Find Products...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="text-align: center;">
+                            <label for="formControlSelect">Category</label>
+                            <select style="margin-top: 2%" class="form-control" id="formControlSelect">
+                                <option>Fish</option>
+                                <option>Meal</option>
+                                <option>Fruit</option>
+                                <option>Vegetables</option>
+                                <option>Pasta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        
+        
+            <div class="row mt-4 overflow-auto">
+                <div class="col-12">
+                    <table id="example" class="display table table-striped " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th id="options"></th>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Price(Unity)</th>
+                                <th>Provide</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="#editModal" role="button" data-bs-target="#editModal" data-bs-toggle="modal"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-default bi bi-pencil-square" href="app/link_menu/edit.html" role="button"></a>                                
+                                    <a class="btn btn-default bi bi-dash-circle" href="#removeModal" role="button" data-bs-target="#removeModal" data-bs-toggle="modal"></a>
+                                </td>
+                                <td>1</td>
+                                <td>Ham</td>
+                                <td>Meal</td>
+                                <td>61</td>
+                                <td>$ 10</td>
+                                <td>Friboi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
         </div>
     </div>
 </div>
 
-<script src="../../extensoes/script/app/link_menu/table.js"></script>
+
+<script src="../../extensoes/js/app/link_menu/table.js"></script>
